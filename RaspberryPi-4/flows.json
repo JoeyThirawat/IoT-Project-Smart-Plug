@@ -1,0 +1,1587 @@
+[
+    {
+        "id": "b111679a4cf6da8f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "36f5fb5feae3fb4d",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f3215b4c591c3f60",
+        "type": "MySQLdatabase",
+        "name": "mysql",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "iotproject",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "af5d7007e957033e",
+        "type": "ui_tab",
+        "name": "Smart plug",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f7b13067d2345597",
+        "type": "ui_group",
+        "name": "socket2",
+        "tab": "af5d7007e957033e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa16c13cb9d99b03",
+        "type": "ui_group",
+        "name": "socket1",
+        "tab": "af5d7007e957033e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "68c8d1aa170fa1e0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "80118ac056e8e663",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "af5d7007e957033e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1c3c88ad09111ea6",
+        "type": "ui_group",
+        "name": "bill",
+        "tab": "af5d7007e957033e",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "17a85b6612faf0b3",
+        "type": "ui_tab",
+        "name": "Room",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ced2d7bc4af69994",
+        "type": "ui_group",
+        "name": "SW1",
+        "tab": "28e7c0f3e7662bd8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95cb088612c90c2e",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "17a85b6612faf0b3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d011e0132a67abeb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2f81e6a8a9525d21",
+        "type": "ui_group",
+        "name": "Energy bill",
+        "tab": "af5d7007e957033e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cdd976ee2e29f940",
+        "type": "ui_group",
+        "name": "chart",
+        "tab": "af5d7007e957033e",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61d194fc68f49815",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "652e5a5c3eef9b6b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "652e5a5c3eef9b6b",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0a46a53268c9fdde",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "af5d7007e957033e",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28e7c0f3e7662bd8",
+        "type": "ui_tab",
+        "name": "joey_test",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "60e01f094264f0cc",
+        "type": "ui_group",
+        "name": "SW2",
+        "tab": "28e7c0f3e7662bd8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce5fcc94b9c81bd0",
+        "type": "ui_tab",
+        "name": "Room",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5eda4439563b7132",
+        "type": "ui_group",
+        "name": "SW1",
+        "tab": "ce915b20b37eabcc",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d86fe9c367d1afaf",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "ce5fcc94b9c81bd0",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dab55ff94aadd953",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c2084a45bf4f66cf",
+        "type": "ui_group",
+        "name": "Energy bill",
+        "tab": "af5d7007e957033e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ddaad7995163699d",
+        "type": "ui_group",
+        "name": "chart",
+        "tab": "af5d7007e957033e",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b4ac64d04d880581",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "fad917ecab79f451",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fad917ecab79f451",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3322f309dc34652c",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "af5d7007e957033e",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce915b20b37eabcc",
+        "type": "ui_tab",
+        "name": "joey_test",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53e3b6a09488750a",
+        "type": "ui_group",
+        "name": "SW2",
+        "tab": "ce915b20b37eabcc",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "deb589e405eb799a",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "sw1",
+        "topic": "smart_plug/sw1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "21003271d7b7463d",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "sw2",
+        "topic": "smart_plug/sw2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "30c063cb4baa7ed2",
+        "type": "function",
+        "z": "b111679a4cf6da8f",
+        "name": "function 4",
+        "func": "var sw1 = msg.payload[\"smart_plug/sw1\"]\nvar sw2 = msg.payload[\"smart_plug/sw2\"]\n\nvar v1 = msg.payload[\"smart_plug/v1\"]\nvar i1 = msg.payload[\"smart_plug/i2\"]\nvar p1 = msg.payload[\"smart_plug/p1\"]\nvar e1 = msg.payload[\"smart_plug/e1\"]\nvar f1 = msg.payload[\"smart_plug/f1\"]\nvar pf1 = msg.payload[\"smart_plug/pf1\"]\n\nvar v2 = msg.payload[\"smart_plug/v2\"]\nvar i2 = msg.payload[\"smart_plug/i2\"]\nvar p2 = msg.payload[\"smart_plug/p2\"]\nvar e2 = msg.payload[\"smart_plug/e2\"]\nvar f2 = msg.payload[\"smart_plug/f2\"]\nvar pf2 = msg.payload[\"smart_plug/pf2\"]\n\nvar elecCharge_1 = msg.payload[\"smart_plug/elecCharge_1\"]\nvar elecCharge_2 = msg.payload[\"smart_plug/elecCharge_2\"]\nvar elecCharge_All = msg.payload[\"smart_plug/elecCharge_All\"]\n\nmsg.topic = \"INSERT INTO smart_plug_data(SW1, SW2, V1, I1, P1, E1, F1, PF1, V2, I2, P2, E2, F2, PF2, ElecCharge_1, ElecCharge_2, ElecCharge_All)\" +\n    \"VALUES (\"+sw1+\", \"+sw2+\", \"+v1+\", \"+i1+\", \"+p1+\", \"+e1+\", \"+f1+\", \"+pf1+\", \"+v2+\", \"+i2+\", \"+p2+\", \"+e2+\", \"+f2+\", \"+pf2+\", \"+elecCharge_1+\", \"+elecCharge_2+\", \"+elecCharge_All+\")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 760,
+        "wires": [
+            [
+                "49f91312e895ba4b"
+            ]
+        ]
+    },
+    {
+        "id": "49f91312e895ba4b",
+        "type": "mysql",
+        "z": "b111679a4cf6da8f",
+        "mydb": "f3215b4c591c3f60",
+        "name": "",
+        "x": 970,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9bde90bd1778124",
+        "type": "join",
+        "z": "b111679a4cf6da8f",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "17",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 760,
+        "wires": [
+            [
+                "30c063cb4baa7ed2"
+            ]
+        ]
+    },
+    {
+        "id": "4d7d6495eff2b5de",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "v1",
+        "topic": "smart_plug/v1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "904d471aeeafa9a4",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "i1",
+        "topic": "smart_plug/i1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "2be556589d150402",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "p1",
+        "topic": "smart_plug/p1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "440dab8ceed67bac",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "e1",
+        "topic": "smart_plug/e1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "1c4216761d54dbce",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "f1",
+        "topic": "smart_plug/f1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 640,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "c84396a96190a82c",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "pf1",
+        "topic": "smart_plug/pf1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 680,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "5b89028c78767145",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "v2",
+        "topic": "smart_plug/v2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 760,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "ad445e19478eb069",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "i2",
+        "topic": "smart_plug/i2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 800,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "f0163cab1e2e1e27",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "p2",
+        "topic": "smart_plug/p2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 840,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "e663d5bb965136d3",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "e2",
+        "topic": "smart_plug/e2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 880,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "86c44b97b282917d",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "f2",
+        "topic": "smart_plug/f2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 920,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "9e5166eb620bc838",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "pf2",
+        "topic": "smart_plug/pf2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "f83e20a743c40ab9",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "elecCharge_1",
+        "topic": "smart_plug/elecCharge_1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 1040,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "5768a1bf114df258",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "elecCharge_2",
+        "topic": "smart_plug/elecCharge_2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 330,
+        "y": 1080,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "51c25fb9c42c9bf5",
+        "type": "mqtt in",
+        "z": "b111679a4cf6da8f",
+        "name": "elecCharge_All",
+        "topic": "smart_plug/elecCharge_All",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "dab55ff94aadd953",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 1120,
+        "wires": [
+            [
+                "c9bde90bd1778124"
+            ]
+        ]
+    },
+    {
+        "id": "11c81bd0d45eeb7b",
+        "type": "ui_switch",
+        "z": "b111679a4cf6da8f",
+        "name": "sw1",
+        "label": "Switch 1",
+        "tooltip": "",
+        "group": "5eda4439563b7132",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "smart_plug/sw1_sub",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "sw1_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "sw1_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "92e28d2a3802c565"
+            ]
+        ]
+    },
+    {
+        "id": "92e28d2a3802c565",
+        "type": "mqtt out",
+        "z": "b111679a4cf6da8f",
+        "name": "sw1",
+        "topic": "smart_plug/sw1_sub",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dab55ff94aadd953",
+        "x": 890,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "87f71b9abe81426a",
+        "type": "ui_switch",
+        "z": "b111679a4cf6da8f",
+        "name": "sw2",
+        "label": "Switch 2",
+        "tooltip": "",
+        "group": "53e3b6a09488750a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "smart_plug/sw2_sub",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "sw2_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "sw2_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "802d3f147529dad3"
+            ]
+        ]
+    },
+    {
+        "id": "802d3f147529dad3",
+        "type": "mqtt out",
+        "z": "b111679a4cf6da8f",
+        "name": "sw2",
+        "topic": "smart_plug/sw2_sub",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dab55ff94aadd953",
+        "x": 890,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f1c241a3fc862bf5",
+        "type": "mysql",
+        "z": "36f5fb5feae3fb4d",
+        "mydb": "f3215b4c591c3f60",
+        "name": "",
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "c4cc553c30050835",
+                "aade9a010b16adec",
+                "082c0a299e696b3c",
+                "af5af772b89be27c",
+                "c91816cf7fcb1aea"
+            ]
+        ]
+    },
+    {
+        "id": "896732d9825b3af1",
+        "type": "inject",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.01",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "c0b2ec787b053e69"
+            ]
+        ]
+    },
+    {
+        "id": "082c0a299e696b3c",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Socket1",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID desc LIMIT 1\"\nmsg.payload = msg.payload[0].SW1\nif (msg.payload == 0) {\n    msg.payload = \"off\";\n}\nelse if (msg.payload == 1) {\n    msg.payload = \"on\";\n}\nelse {\n    return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "5ebd1e803992e972",
+                "260dd46adcfcec60"
+            ]
+        ]
+    },
+    {
+        "id": "af5af772b89be27c",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Socket2",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID desc LIMIT 1\"\nif (msg.payload[0].SW2 == 0) {\n    msg.payload = \"off\";\n}\nelse if (msg.payload[0].SW2 == 1) {\n    msg.payload = \"on\";\n}\nelse {\n    return msg;\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "ff5a54e77bd3661d",
+                "15121dd0cf34610d"
+            ]
+        ]
+    },
+    {
+        "id": "ff5a54e77bd3661d",
+        "type": "debug",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Socket 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "15121dd0cf34610d",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "f7b13067d2345597",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "State:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5ebd1e803992e972",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "aa16c13cb9d99b03",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "State:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c25aab37610ca5fe",
+        "type": "ui_button",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "group": "aa16c13cb9d99b03",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "sw1_on",
+        "payloadType": "str",
+        "topic": "smart_plug/sw1_sub",
+        "topicType": "msg",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "5ebd1e803992e972",
+                "260dd46adcfcec60",
+                "9540b3dedbc6dff7",
+                "807a01f018960f1d"
+            ]
+        ]
+    },
+    {
+        "id": "0515388689bd742f",
+        "type": "ui_button",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "group": "aa16c13cb9d99b03",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "sw1_off",
+        "payloadType": "str",
+        "topic": "smart_plug/sw1_sub",
+        "topicType": "msg",
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "5ebd1e803992e972",
+                "260dd46adcfcec60",
+                "9540b3dedbc6dff7",
+                "807a01f018960f1d"
+            ]
+        ]
+    },
+    {
+        "id": "260dd46adcfcec60",
+        "type": "debug",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Socket 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0e4e5afe0e28ef80",
+        "type": "ui_button",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "group": "f7b13067d2345597",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "sw2_on",
+        "payloadType": "str",
+        "topic": "smart_plug/sw2_sub",
+        "topicType": "msg",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "ff5a54e77bd3661d",
+                "15121dd0cf34610d",
+                "aa9e108cce44fb24",
+                "20477e7852d2c711"
+            ]
+        ]
+    },
+    {
+        "id": "5b60bb40dedf4bf6",
+        "type": "ui_button",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "group": "f7b13067d2345597",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "sw2_off",
+        "payloadType": "str",
+        "topic": "smart_plug/sw2_sub",
+        "topicType": "msg",
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "ff5a54e77bd3661d",
+                "15121dd0cf34610d",
+                "aa9e108cce44fb24",
+                "20477e7852d2c711"
+            ]
+        ]
+    },
+    {
+        "id": "aade9a010b16adec",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Power",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID asc LIMIT 1\"\nmsg.E1 = msg.payload[0].P1\nmsg.E2 = msg.payload[0].P2\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "33f784abc2f842e1",
+                "201175b925e52572",
+                "17dde05ba7ebfc25"
+            ]
+        ]
+    },
+    {
+        "id": "33f784abc2f842e1",
+        "type": "debug",
+        "z": "36f5fb5feae3fb4d",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "201175b925e52572",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "3322f309dc34652c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power1 used (Watt):",
+        "format": "{{msg.E1}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c4cc553c30050835",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "bill",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID asc LIMIT 1\"\nmsg.B1 = msg.payload[0].ElecCharge_1\nmsg.B2 = msg.payload[0].ElecCharge_2\nmsg.B3 = msg.payload[0].ElecCharge_All\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "b9f586a6de2163a7",
+                "9bd905fa2b5a9208",
+                "a235d9bd08fb6aa3"
+            ]
+        ]
+    },
+    {
+        "id": "b9f586a6de2163a7",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "c2084a45bf4f66cf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Bills SW1 (Baht):",
+        "format": "{{msg.B1}} ",
+        "layout": "row-spread",
+        "className": "",
+        "x": 770,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c0b2ec787b053e69",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "select data",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID desc LIMIT 1\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "f1c241a3fc862bf5"
+            ]
+        ]
+    },
+    {
+        "id": "20477e7852d2c711",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "line sw2",
+        "func": "if (msg.payload == \"sw2_off\"){\n    msg.payload = \"socket2: off\"\n}\nelse if (msg.payload == \"sw2_on\") {\n    msg.payload = \"socket2: on\";\n}\nelse {\n    return msg;\n}\nmsg.headers = {\n    'content-type': 'application/x-www-form-urlencoded',\n    'Authorization': 'Bearer N4J4yrkXUVQHHxqsOiUbdp89p0jYLluQ5ea4nHhX0kZ'\n};\nmsg.payload = {\n    \"message\": msg.payload, \"stickerPackageId\": 446, \"stickerId\": 1993\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "e02a7444d06870c3",
+                "de0195816095a2f7"
+            ]
+        ]
+    },
+    {
+        "id": "e02a7444d06870c3",
+        "type": "http request",
+        "z": "36f5fb5feae3fb4d",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://notify-api.line.me/api/notify",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1170,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17dde05ba7ebfc25",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "3322f309dc34652c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power2 used (Watt):",
+        "format": "{{msg.E2}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9bd905fa2b5a9208",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "c2084a45bf4f66cf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Bills SW2 (Baht):",
+        "format": "{{msg.B2}} ",
+        "layout": "row-spread",
+        "className": "",
+        "x": 770,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a235d9bd08fb6aa3",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "c2084a45bf4f66cf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Bills all (Baht):",
+        "format": "{{msg.B3}} ",
+        "layout": "row-spread",
+        "className": "",
+        "x": 760,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "c91816cf7fcb1aea",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "Current",
+        "func": "msg.topic = \"SELECT * FROM smart_plug_data order by ID asc LIMIT 1\"\nmsg.C1 = msg.payload[0].I1\nmsg.C2 = msg.payload[0].I2\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 860,
+        "wires": [
+            [
+                "dd371e6b6e913d5e",
+                "3bbd7e08dd8f3a55",
+                "2fcb55fcb5173cda"
+            ]
+        ]
+    },
+    {
+        "id": "dd371e6b6e913d5e",
+        "type": "debug",
+        "z": "36f5fb5feae3fb4d",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "C1",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3bbd7e08dd8f3a55",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "3322f309dc34652c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current1 used (Amp):",
+        "format": "{{msg.C1}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "2fcb55fcb5173cda",
+        "type": "ui_text",
+        "z": "36f5fb5feae3fb4d",
+        "group": "3322f309dc34652c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current2 used (Amp):",
+        "format": "{{msg.C2}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "807a01f018960f1d",
+        "type": "function",
+        "z": "36f5fb5feae3fb4d",
+        "name": "line sw1",
+        "func": "if (msg.payload == \"sw1_off\") {\n    msg.payload = \"socket1: off\";\n}\nelse if (msg.payload == \"sw1_on\") {\n    msg.payload = \"socket1: on\";\n}\nelse {\n    return msg;\n}\nmsg.headers = {\n    'content-type': 'application/x-www-form-urlencoded',\n    'Authorization': 'Bearer N4J4yrkXUVQHHxqsOiUbdp89p0jYLluQ5ea4nHhX0kZ'\n};\nmsg.payload = {\n    \"message\": msg.payload, \"stickerPackageId\": 446, \"stickerId\": 1993\n};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "e02a7444d06870c3",
+                "de0195816095a2f7"
+            ]
+        ]
+    },
+    {
+        "id": "de0195816095a2f7",
+        "type": "ui_toast",
+        "z": "36f5fb5feae3fb4d",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "Send Notify",
+        "name": "Notify",
+        "x": 1170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9540b3dedbc6dff7",
+        "type": "mqtt out",
+        "z": "36f5fb5feae3fb4d",
+        "name": "sw1",
+        "topic": "smart_plug/sw1_sub",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dab55ff94aadd953",
+        "x": 750,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "aa9e108cce44fb24",
+        "type": "mqtt out",
+        "z": "36f5fb5feae3fb4d",
+        "name": "sw2",
+        "topic": "smart_plug/sw2_sub",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dab55ff94aadd953",
+        "x": 750,
+        "y": 100,
+        "wires": []
+    }
+]
