@@ -12,6 +12,22 @@ Inside the Raspberry Pi 4, which acts as a LAMP server (Linux, Apache, MySQL, PH
 - Use MQTT as a communication protocol between ESP8266 and Raspberry Pi 4
 - Has LINE Notify to announce users through LINE messages
 
+## Components
+Raspberry Pi 4
+ESP8266
+5V. 4-channel relay module
+Hi-Link Switching Power Supply 220v. to 5v.
+An Electric Box
+2 Sockets
+A Fuse box
+Fuse
+Digital AV Voltage Meter and Display module
+An AC socket
+Panel Mounted Fixed Barrier
+AC wires
+Perfboards
+PZEM-004 AC Digital Power Energy Meter Module
+
 ## Smart Plug functioning demonstration
 Demonstration Video => [Project Demonstration YouTube Video](https://youtu.be/FFx-KPFvHos)
 
