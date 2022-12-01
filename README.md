@@ -4,6 +4,14 @@ The Smart plug has ESP8266 as the main microcontroller to process and control ea
 
 Inside the Raspberry Pi 4, which acts as a LAMP server (Linux, Apache, MySQL, PHP server), we use MySQL for the database (We also install phpMyAdmin for analyzing data), then use Node-RED to construct the web app for controlling the Smart Plug.
 
+## General Information
+- Raspberry Pi 4 functions as a LAMP server (Linux, Apache, MySQL, PHP)
+- Have 2 socket slots.
+- ESP8266 acts as a microcontroller installed inside the Smart Plug
+- Use Node-RED to connect each process
+- Use MQTT as a communication protocol between ESP8266 and Raspberry Pi 4
+- Has LINE Notify to announce users through LINE messages
+
 ## Smart Plug functioning demonstration
 Demonstration Video => [Project Demonstration YouTube Video](https://youtu.be/FFx-KPFvHos)
 
