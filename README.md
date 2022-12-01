@@ -39,4 +39,4 @@ Official Page => [Smart Plug's Notion Page](https://gem-toast-375.notion.site/Sm
 2. Control the state of the socket.
 3. Send LINE messages to notify when the state change.
 
-This project is part of the Internet of Things and Smart Robotics and AI Systems class at King Mongkut's Institute of Technology Ladkrabang (KMITL). The team members are in the third year of Robotics and AI Engineering Major.
+This project is part of the Internet of Things and Smart Robotics and AI Systems Class at King Mongkut's Institute of Technology Ladkrabang (KMITL). The team members are in the third year of Robotics and AI Engineering Major.
